@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  background-color: #C2DED1;
+}
+
+h1, h2, p {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.title-menu {
+  margin: 50px auto 35px;
+}
+
+.title-menu > h1 {
+  text-align: center;
+  font-size: 175%;
+  color: #000000;
+}
+
+.row-container {
+  width: 100%;
+}
+
+.main-container {
+  margin: 15px;
+}
+
+.section-container {
+  position: relative;
+  border: 3px solid black;
+  background-color: #ECE5C7;
+  margin: 20px;
+  padding: 30px 15px 15px;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 60px;
+  background-color: green;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: -0.5px;
+  margin-right: -0.5px;
+
+}
+
+.section-title > h2 {
+  font-size: 175%;
+  width: 100px;
+}
+
+#title-one {
+  background-color: #CDC2AE;
+} 
+
+#title-two{
+  background-color: #CDC2AE;
+}
+
+#title-three{
+  background-color: #CDC2AE;
+}
+
+p {
+  font-size: 125%;
+  margin-top: 25px;
+  text-align: left;
+  color: #000000;
+}
+
+/*media queries for Desktop device*/
+@media (min-width: 992px) {
+	.col-4 {
+	  float: left;
+  	  width: 33.33%;			
+	}
+}
+
+/*media queries for Tablet device*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-6 {
+	  width: 50%;
+	  float: left;
+	}
+	.col-12 {
+	  width: 100%;
+	  float: left;
+	}
+}
+
+/*media queries for Mobile device is not specified @media (max-width: 767px) {} */
+/*Untuk mobile device, media querienya tidak perlu dispesifikasi karena
+akan otomatis berperan sbagai block level, artinya bakal saling tumpuk*/
